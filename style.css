@@ -1,0 +1,234 @@
+   <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        div.container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+        /* HEADER */
+
+        header {
+            background-color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            width: 120px;
+            line-height: 3em;
+        }
+
+        a {
+            color: #1800AD;
+            text-decoration: none;
+        }
+
+        .student-hub {
+            background-color: ##1800AD;
+            color: white;
+            padding: 10px;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .hero-left {
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        .hero-right {
+            width: 40%;
+        }
+
+        .hero-right img {
+            width: 100%;
+        }
+
+        h1 {
+            color: #1800AD;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #555555;
+            margin-bottom: 30px;
+        }
+
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 25px;
+            margin-right: 10px;
+        }
+
+        .button-white {
+            display: inline-block;
+            background-color: white;
+            color: #1800AD;
+            border: 2px solid #1800AD;
+            padding: 13px 25px;
+        }
+
+
+        /* THREE CARDS */
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 20px;
+        }
+
+        .card {
+            width: 31%;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 20px;
+        }
+
+        .icon {
+            margin-bottom: 15px;
+        }
+
+        .icon img {
+            width: 40px;
+        }
+
+        .card h3 {
+            color: #1800AD;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555555;
+        }
+
+
+        /* TESTIMONIAL */
+
+        .testimonial {
+            padding: 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .testimonial p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-name {
+            color: #cc0000;
+        }
+
+
+        /* AS SEEN ON */
+
+        .featured {
+            padding: 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .featured h2 {
+            color: #1800AD;
+        }
+
+
+        /* GET STARTED */
+
+        .action {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1800AD;
+            color: white;
+            padding: 30px;
+        }
+
+        .action h2 {
+            margin-bottom: 10px;
+        }
+
+        .action-button {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 30px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #eeeeee;
+            margin-top: 50px;
+            padding: 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo img {
+            width: 100px;
+        }
+
+        .footer-column {
+            width: 18%;
+        }
+
+        .footer-column h4 {
+            color: #1800AD;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #555555;
+            line-height: 2em;
+        }
+
+        .copyright {
+            border-top: 1px solid #cccccc;
+            margin-top: 40px;
+            padding-top: 15px;
+            color: #777777;
+        }
+
+    </style>
