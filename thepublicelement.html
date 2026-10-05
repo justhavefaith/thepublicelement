@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shape Your World</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        div.container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+        /* HEADER */
+
+        header {
+            background-color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            width: 120px;
+            line-height: 3em;
+        }
+
+        a {
+            color: #1800AD;
+            text-decoration: none;
+        }
+
+        .student-hub {
+            background-color: ##1800AD;
+            color: white;
+            padding: 10px;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .hero-left {
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        .hero-right {
+            width: 40%;
+        }
+
+        .hero-right img {
+            width: 100%;
+        }
+
+        h1 {
+            color: #1800AD;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #555555;
+            margin-bottom: 30px;
+        }
+
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 25px;
+            margin-right: 10px;
+        }
+
+        .button-white {
+            display: inline-block;
+            background-color: white;
+            color: #1800AD;
+            border: 2px solid #1800AD;
+            padding: 13px 25px;
+        }
+
+
+        /* THREE CARDS */
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 20px;
+        }
+
+        .card {
+            width: 31%;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 20px;
+        }
+
+        .icon {
+            margin-bottom: 15px;
+        }
+
+        .icon img {
+            width: 40px;
+        }
+
+        .card h3 {
+            color: #1800AD;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555555;
+        }
+
+
+        /* TESTIMONIAL */
+
+        .testimonial {
+            padding: 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .testimonial p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-name {
+            color: #cc0000;
+        }
+
+
+        /* AS SEEN ON */
+
+        .featured {
+            padding: 30px;
+            border: 1px solid #cccccc;
+        }
+
+        .featured h2 {
+            color: #1800AD;
+        }
+
+
+        /* GET STARTED */
+
+        .action {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1800AD;
+            color: white;
+            padding: 30px;
+        }
+
+        .action h2 {
+            margin-bottom: 10px;
+        }
+
+        .action-button {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 30px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #eeeeee;
+            margin-top: 50px;
+            padding: 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo img {
+            width: 100px;
+        }
+
+        .footer-column {
+            width: 18%;
+        }
+
+        .footer-column h4 {
+            color: #1800AD;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #555555;
+            line-height: 2em;
+        }
+
+        .copyright {
+            border-top: 1px solid #cccccc;
+            margin-top: 40px;
+            padding-top: 15px;
+            color: #777777;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <img src="the public.png" alt="Logo">
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="#">LEARN</a>
+                </li>
+
+                <li>
+                    <a href="#">ACT NOW</a>
+                </li>
+
+                <li>
+                    <a href="#">GET INVOLVED</a>
+                </li>
+
+                <li>
+                    <a class="student-hub" href="#">STUDENT HUB</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <div class="hero-left">
+
+                <h1>
+                    SHAPE YOUR WORLD.<br>
+                    TAKE ACTION NOW.
+                </h1>
+
+                <p>
+                    Learn how to turn the issues you care about
+                    into meaningful civic action.
+                </p>
+
+                <a class="button" href="#">
+                    LEARN MORE
+                </a>
+
+                <a class="button-white" href="#">
+                    GET INVOLVED
+                </a>
+
+            </div>
+
+
+            <div class="hero-right">
+
+                <img src="imagesourceformywebsite.png"
+                     alt="Students taking action">
+
+            </div>
+
+        </div>
+
+
+        <!-- THREE CARDS -->
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="icon">
+                    <img src="1.png"
+                         alt="Learning">
+                </div>
+
+                <h3>LEARNING RESOURCES</h3>
+
+                <p>
+                    Learn about civic engagement,
+                    government, advocacy, and issues
+                    affecting your community.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    <img src="2.png"
+                         alt="Take action">
+                </div>
+
+                <h3>TAKE ACTION</h3>
+
+                <p>
+                    Find ways to turn your ideas
+                    into action and make your
+                    voice heard.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    <img src="3.png"
+                         alt="Community">
+                </div>
+
+                <h3>FIND YOUR COMMUNITY</h3>
+
+                <p>
+                    Connect with organizations,
+                    programs, and people working
+                    toward change.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- TESTIMONIAL -->
+
+        <div class="testimonial">
+
+            <p>
+                “Young people have the power to shape their
+                communities when they have the tools to make
+                their voices heard.”
+            </p>
+
+            <div class="testimonial-name">
+                Name, Role
+            </div>
+
+        </div>
+
+
+        <!-- AS SEEN ON -->
+
+        <div class="featured">
+
+            <h2>AS SEEN ON...</h2>
+
+        </div>
+
+
+        <!-- GET STARTED -->
+
+        <div class="action">
+
+            <div>
+
+                <h2>READY TO GET STARTED?</h2>
+
+                <p>
+                    Find the resources you need to
+                    take the next step.
+                </p>
+
+            </div>
+
+            <a class="action-button" href="#">
+                GET STARTED
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-logo">
+                <img src="the public.png"
+                     alt="Logo">
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>COLUMN ONE</h4>
+
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>COLUMN TWO</h4>
+
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>COLUMN THREE</h4>
+
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+                <a href="#">Link label</a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="rights">
+            2026 The Public Element
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>
