@@ -43,25 +43,27 @@
         }
 
         ul {
-            text-align: center;
-        }
+    text-align: center;
+}
 
-        li {
-            display: inline-block;
-            width: 120px;
-            line-height: 3em;
-        }
+li {
+    display: inline-block;
+    width: auto;
+    margin: 0 18px;
+    line-height: 3em;
+}
 
-        a {
-            color: #1800AD;
-            text-decoration: none;
-        }
+a {
+    color: #1800AD;
+    text-decoration: none;
+}
 
-        .student-hub {
-            background-color: ##1800AD;
-            color: white;
-            padding: 10px;
-        }
+.student-hub {
+    background-color: #1800AD;
+    color: white;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
 
 
         /* HERO */
@@ -239,7 +241,220 @@
             padding-top: 15px;
             color: #777777;
         }
+/* TABLET */
 
+@media screen and (max-width: 900px) {
+
+    div.container {
+        width: 95%;
+    }
+
+    /* HEADER */
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    li {
+        width: auto;
+        margin: 0 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .hero-left {
+        width: 55%;
+    }
+
+    .hero-right {
+        width: 42%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        width: 33%;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-column {
+        width: 30%;
+    }
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    div.container {
+        width: 100%;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    li a {
+        display: block;
+        padding: 5px;
+    }
+
+    .student-hub {
+        margin-top: 5px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-left {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        line-height: 1.5;
+    }
+
+    .button,
+    .button-white {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial {
+        padding: 25px 20px;
+    }
+
+    .testimonial p {
+        font-size: 18px;
+    }
+
+
+    /* FEATURED */
+
+    .featured {
+        padding: 25px 20px;
+    }
+
+
+    /* GET STARTED */
+
+    .action {
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+
+    .action-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 30px;
+        padding: 25px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
     </style>
 
 </head>
@@ -264,19 +479,19 @@
             <ul>
 
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a href="about.html">ABOUT</a>
                 </li>
 
                 <li>
-                    <a href="#">LEARN</a>
+                    <a href="learn.html">LEARN</a>
                 </li>
 
                 <li>
-                    <a href="#">ACT NOW</a>
+                    <a href="actnow.html">ACT NOW</a>
                 </li>
 
                 <li>
-                    <a href="#">GET INVOLVED</a>
+                    <a href="getinvolved.html">GET INVOLVED</a>
                 </li>
 
                 <li>
