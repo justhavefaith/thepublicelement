@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,99 +13,95 @@
 
     <style>
 
+        .about-banner {
+            width: 100%;
+            margin-bottom: 40px;
+        }
 
-.about-banner {
-    width: 100%;
-    margin-bottom: 40px;
-}
+        .about-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.about-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+        .about-intro {
+            background-color: #eeeeee;
+            border: 1px solid #cccccc;
+            padding: 35px;
+            margin-bottom: 30px;
+        }
 
+        .about-intro p {
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-.about-intro {
-    background-color: #eeeeee;
-    border: 1px solid #cccccc;
-    padding: 35px;
-    margin-bottom: 30px;
-}
+        .about-intro p:last-child {
+            margin-bottom: 0;
+        }
 
-.about-intro p {
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+        .author-section {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
 
-.about-intro p:last-child {
-    margin-bottom: 0;
-}
+        .author-image {
+            width: 30%;
+            min-height: 300px;
+            border: 1px solid #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.author-section {
-    display: flex;
-    gap: 25px;
-    margin-bottom: 30px;
-}
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.author-image {
-    width: 30%;
-    min-height: 300px;
-    border: 1px solid #cccccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .author-text {
+            width: 70%;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 30px;
+        }
 
-.author-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .author-text h2 {
+            color: #1800AD;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
 
-.author-text {
-    width: 70%;
-    background-color: #eeeeee;
-    border: 1px solid #cccccc;
-    padding: 30px;
-}
+        .author-text p {
+            color: #555555;
+            line-height: 1.6;
+        }
 
-.author-text h2 {
-    color: #1800AD;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.author-text p {
-    color: #555555;
-    line-height: 1.6;
-}
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-    body {
-    font-family: "Poppins", sans-serif;
-}
+        body {
+            font-family: "Poppins", sans-serif;
+        }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-}
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+        }
 
         div.container {
             width: 80%;
             margin: 0 auto;
         }
-
-
-        /* HEADER */
 
         header {
             background-color: white;
@@ -121,32 +118,27 @@ h4 {
         }
 
         ul {
-    text-align: center;
-}
+            text-align: center;
+        }
 
-li {
-    display: inline-block;
-    width: auto;
-    margin: 0 18px;
-    line-height: 3em;
-}
+        li {
+            display: inline-block;
+            width: auto;
+            margin: 0 18px;
+            line-height: 3em;
+        }
 
-a {
-    color: #1800AD;
-    text-decoration: none;
-}
+        a {
+            color: #1800AD;
+            text-decoration: none;
+        }
 
-.student-hub {
-    background-color: #1800AD;
-    color: white;
-    padding: 10px 15px;
-    white-space: nowrap;
-}
-
-
-
-
-        /* BUTTONS */
+        .student-hub {
+            background-color: #1800AD;
+            color: white;
+            padding: 10px 15px;
+            white-space: nowrap;
+        }
 
         .button {
             display: inline-block;
@@ -163,9 +155,6 @@ a {
             border: 2px solid #1800AD;
             padding: 13px 25px;
         }
-
-
-        /* THREE CARDS */
 
         .cards {
             display: flex;
@@ -198,9 +187,6 @@ a {
             color: #555555;
         }
 
-
-        /* TESTIMONIAL */
-
         .testimonial {
             padding: 30px;
             border: 1px solid #cccccc;
@@ -215,9 +201,6 @@ a {
             color: #cc0000;
         }
 
-
-        /* AS SEEN ON */
-
         .featured {
             padding: 30px;
             border: 1px solid #cccccc;
@@ -226,9 +209,6 @@ a {
         .featured h2 {
             color: #1800AD;
         }
-
-
-        /* GET STARTED */
 
         .action {
             display: flex;
@@ -285,200 +265,159 @@ a {
             color: #777777;
         }
 
-@media screen and (max-width: 900px) {
+        @media screen and (max-width: 900px) {
 
-    div.container {
-        width: 95%;
-    }
+            div.container {
+                width: 95%;
+            }
 
-    /* HEADER */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+            .logo {
+                margin-bottom: 15px;
+            }
 
-    .logo {
-        margin-bottom: 15px;
-    }
+            li {
+                width: auto;
+                margin: 0 12px;
+            }
 
-    li {
-        width: auto;
-        margin: 0 12px;
-    }
+            .cards {
+                gap: 15px;
+            }
 
+            .card {
+                width: 33%;
+            }
 
+            .footer-content {
+                flex-wrap: wrap;
+                gap: 25px;
+            }
 
+            .footer-logo {
+                width: 100%;
+            }
 
-    /* CARDS */
+            .footer-column {
+                width: 30%;
+            }
+        }
 
-    .cards {
-        gap: 15px;
-    }
+        @media screen and (max-width: 600px) {
 
-    .card {
-        width: 33%;
-    }
+            div.container {
+                width: 100%;
+            }
 
+            header {
+                padding: 15px;
+            }
 
+            nav {
+                flex-direction: column;
+            }
 
+            ul {
+                width: 100%;
+            }
 
-    .footer-content {
-        flex-wrap: wrap;
-        gap: 25px;
-    }
+            li {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
 
-    .footer-logo {
-        width: 100%;
-    }
+            li a {
+                display: block;
+                padding: 5px;
+            }
 
-    .footer-column {
-        width: 30%;
-    }
-}
+            .student-hub {
+                margin-top: 5px;
+            }
 
+            .button,
+            .button-white {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
 
+            .cards {
+                flex-direction: column;
+                padding: 20px;
+            }
 
-/* MOBILE */
+            .card {
+                width: 100%;
+                margin-bottom: 15px;
+            }
 
-@media screen and (max-width: 600px) {
+            .testimonial {
+                padding: 25px 20px;
+            }
 
-    div.container {
-        width: 100%;
-    }
+            .testimonial p {
+                font-size: 18px;
+            }
 
+            .featured {
+                padding: 25px 20px;
+            }
 
-    /* HEADER */
+            .action {
+                flex-direction: column;
+                padding: 25px 20px;
+            }
 
-    header {
-        padding: 15px;
-    }
+            .action-button {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
 
-    nav {
-        flex-direction: column;
-    }
+            footer {
+                margin-top: 30px;
+                padding: 25px 20px;
+            }
 
-    ul {
-        width: 100%;
-    }
+            .footer-content {
+                flex-direction: column;
+            }
 
-    li {
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
+            .footer-logo {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
-    li a {
-        display: block;
-        padding: 5px;
-    }
+            .footer-column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
 
-    .student-hub {
-        margin-top: 5px;
-    }
-
-
-    /* BANNER */
-
-
-    .button,
-    .button-white {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-
-    /* CARDS */
-
-    .cards {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .card {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-
-    /* TESTIMONIAL */
-
-    .testimonial {
-        padding: 25px 20px;
-    }
-
-    .testimonial p {
-        font-size: 18px;
-    }
-
-
-    /* FEATURED */
-
-    .featured {
-        padding: 25px 20px;
-    }
-
-
-    /* GET STARTED */
-
-    .action {
-        flex-direction: column;
-        padding: 25px 20px;
-    }
-
-    .action-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        margin-top: 30px;
-        padding: 25px 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-}
     </style>
 
 </head>
 
-
 <body>
 
 <div class="container">
-
-
-    <!-- HEADER -->
 
     <header>
 
         <nav>
 
             <div class="logo">
-              <a href="index.html">
-                <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="Logo"
-                >
-              </a>
+                <a href="index.html">
+                    <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="Logo">
+                </a>
             </div>
 
             <ul>
@@ -509,37 +448,38 @@ a {
 
     </header>
 
-
-
     <main>
 
-        <!-- ABOUT HERO -->
         <section class="about-banner">
-            <img src="https://justhavefaith.github.io/thepublicelement/images/about the public element.png" alt="banner reading: about the public element">
+
+            <img
+                src="https://justhavefaith.github.io/thepublicelement/images/about the public element.png"
+                alt="banner reading: about the public element">
+
         </section>
 
-
-        <!-- INTRODUCTION -->
         <section class="about-intro">
 
             <p>
                 The Public Element is a space dedicated to making civic and political engagement more accessible to students and young people, but its content and resources are open to everybody wanting to learn, connect, and engage with world-shaping decisions at State and Federal level alike.
             </p>
+
             <p>
                 Politics can often feel distant, complicated, or like something happening somewhere else and in which we do not have much of a say at all. But many of the decisions that shape our everyday lives — from education and transportation to housing, climate policy, and community resources — are influenced by the government, and public participation of individuals like you!
             </p>
+
             <p>
                 The Public Element is designed to help students better understand how civic institutions work, stay informed about issues that affect them, and discover ways to participate both on campus and in their communities. You do not need to be a political expert to have a voice. Civic engagement starts with understanding what is happening around you, asking questions, and choosing to get involved.
             </p>
 
         </section>
 
-
-
         <section class="author-section">
 
             <div class="author-image">
+
                 <img src="https://justhavefaith.github.io/thepublicelement/images/author.jpeg">
+
             </div>
 
             <div class="author-text">
@@ -547,18 +487,24 @@ a {
                 <h2>THE AUTHOR</h2>
 
                 <p>
-                Hi, I’m Lee, the creator of The Public Element.
-                As a student involved in campus leadership and civic engagement, I have seen how much influence students can have when they understand how institutions work and feel confident using their voices.
+                    Hi, I’m Lee, the creator of The Public Element.
+                    As a student involved in campus leadership and civic engagement, I have seen how much influence students can have when they understand how institutions work and feel confident using their voices.
                 </p>
+
                 <br>
+
                 <p>
-                I created The Public Element to help make politics and civic participation feel more approachable — especially for young people who may want to get involved but are not sure where to begin, and for those who feel disconnected from civic engagement.
-                My goal is to encourage students to become informed, participate in their communities, and recognize that civic engagement can take many forms. With The Public Element, I’m hoping to connect youth with student government resources, public meeting guidelines, volunteering opportunities, advocacy training, and more!
-                <br>
-                Besides being the mind behind The Public Element, I am currently Ohlone College's Associated Student Body's President, pursuing a degree in Environmental Studies.
-                My dream is to find a job in policy that can support the environmental cause and contribute to a more just, cleaner, healthier planet for all its inhabitants.
-                <br>
-                Wanna chat? Get in touch: contact@thepublicelement.com
+                    I created The Public Element to help make politics and civic participation feel more approachable — especially for young people who may want to get involved but are not sure where to begin, and for those who feel disconnected from civic engagement.
+                    My goal is to encourage students to become informed, participate in their communities, and recognize that civic engagement can take many forms. With The Public Element, I’m hoping to connect youth with student government resources, public meeting guidelines, volunteering opportunities, advocacy training, and more!
+
+                    <br>
+
+                    Besides being the mind behind The Public Element, I am currently Ohlone College's Associated Student Body's President, pursuing a degree in Environmental Studies.
+                    My dream is to find a job in policy that can support the environmental cause and contribute to a more just, cleaner, healthier planet for all its inhabitants.
+
+                    <br>
+
+                    Wanna chat? Get in touch: contact@thepublicelement.com
                 </p>
 
             </div>
@@ -567,14 +513,15 @@ a {
 
     </main>
 
-        <footer>
+    <footer>
 
         <div class="footer-content">
 
             <div class="footer-logo">
 
-                <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png"
-                     alt="The Public Element Logo">
+                <img
+                    src="https://justhavefaith.github.io/thepublicelement/images/the public.png"
+                    alt="The Public Element Logo">
 
             </div>
 
@@ -618,8 +565,12 @@ a {
         </div>
 
     </footer>
+
 </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-            <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
 </body>
+
 </html>
