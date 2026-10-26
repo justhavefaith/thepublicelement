@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,9 +20,16 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            color: #222;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            color: #1800AD;
         }
 
         .container {
@@ -44,6 +55,7 @@
 
         .logo img {
             width: 100px;
+            display: block;
         }
 
         nav ul {
@@ -68,7 +80,7 @@
             width: 100%;
             aspect-ratio: 1600 / 600;
             overflow: hidden;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .get-involved-hero img {
@@ -80,19 +92,18 @@
 
         .involvement-section {
             background-color: #eeeeee;
-            padding: 30px;
-            margin-bottom: 30px;
+            padding: 15px;
+            margin-bottom: 25px;
         }
 
         .involvement-section h2 {
-            color: #1800AD;
             font-size: 2rem;
             margin-bottom: 8px;
         }
 
         .involvement-intro {
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
 
         .involvement-grid {
@@ -113,7 +124,7 @@
             width: 100%;
             height: 300px;
             overflow: hidden;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .card-image img {
@@ -125,14 +136,14 @@
 
         .involvement-card h3 {
             font-size: 1rem;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .involvement-card p {
             color: #666;
             font-size: 0.9rem;
             line-height: 1.5;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             flex-grow: 1;
         }
 
@@ -153,15 +164,16 @@
         .work-with-us {
             background-color: #1800AD;
             color: white;
-            padding: 35px;
-            margin-bottom: 30px;
+            padding: 15px;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 30px;
+            gap: 20px;
         }
 
         .work-with-us h2 {
+            color: white;
             font-size: 2rem;
             margin-bottom: 8px;
         }
@@ -175,7 +187,7 @@
         .work-button {
             background-color: red;
             color: white;
-            padding: 15px 35px;
+            padding: 12px 25px;
             min-width: 150px;
             text-align: center;
         }
@@ -188,11 +200,11 @@
         .story-section {
             display: grid;
             grid-template-columns: 30% 1fr;
-            gap: 40px;
+            gap: 20px;
             align-items: center;
             background-color: #eeeeee;
-            padding: 30px;
-            margin-bottom: 35px;
+            padding: 15px;
+            margin-bottom: 25px;
         }
 
         .story-image {
@@ -203,6 +215,7 @@
             align-items: center;
             justify-content: center;
             color: #777;
+            overflow: hidden;
         }
 
         .story-image img {
@@ -215,14 +228,14 @@
         .story-quote {
             font-size: 1.4rem;
             line-height: 1.4;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
         .story-name {
             color: #666;
             font-size: 0.85rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .story-link {
@@ -233,14 +246,14 @@
 
         footer {
             background-color: #eeeeee;
-            padding: 30px;
-            margin-top: 40px;
+            padding: 25px;
+            margin-top: 30px;
         }
 
         .footer-content {
             display: flex;
             justify-content: space-between;
-            gap: 40px;
+            gap: 25px;
         }
 
         .footer-logo img {
@@ -252,7 +265,6 @@
         }
 
         .footer-column h4 {
-            color: #1800AD;
             margin-bottom: 10px;
         }
 
@@ -333,11 +345,12 @@
             .get-involved-hero {
                 width: 100%;
                 aspect-ratio: 1600 / 600;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
             }
 
             .involvement-section {
-                padding: 20px;
+                padding: 15px;
+                margin-bottom: 20px;
             }
 
             .involvement-grid {
@@ -351,7 +364,8 @@
             .work-with-us {
                 flex-direction: column;
                 align-items: flex-start;
-                margin: 0 20px 30px;
+                margin: 0 15px 20px;
+                padding: 15px;
             }
 
             .work-button {
@@ -360,7 +374,8 @@
 
             .story-section {
                 grid-template-columns: 1fr;
-                margin: 0 20px 30px;
+                margin: 0 15px 20px;
+                padding: 15px;
             }
 
             .story-image {
@@ -368,7 +383,8 @@
             }
 
             footer {
-                padding: 25px 20px;
+                padding: 20px;
+                margin-top: 20px;
             }
 
             .footer-content {
@@ -430,8 +446,10 @@
     <main>
 
         <section class="get-involved-hero">
+
             <img src="https://justhavefaith.github.io/thepublicelement/images/get%20involved.png"
                  alt="Get Involved">
+
         </section>
 
         <section class="involvement-section">
@@ -549,7 +567,7 @@
             <div class="story-image">
 
                 <img src="https://justhavefaith.github.io/thepublicelement/images/testimonial.png"
-                     alt="portrait of a student">
+                     alt="Portrait of a student">
 
             </div>
 
