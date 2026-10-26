@@ -10,9 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Shape Your World</title>
-
-
-
     </head>
 
     <body>
@@ -135,107 +132,266 @@
     </body>
 
 
- <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-            body {
-                font-family: "Poppins", sans-serif;
-            }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
 
-            h1,
-            h2,
-            h3,
-            h4 {
-                font-family: "Playfair Display", serif;
-                font-weight: 800;
-            }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            display: block;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            width: auto;
+            margin: 0 18px;
+            line-height: 3em;
+        }
+
+        a {
+            color: #1800AD;
+            text-decoration: none;
+        }
+
+        .student-hub {
+            background-color: #1800AD;
+            color: white;
+            padding: 10px 15px;
+            white-space: nowrap;
+        }
+
+        .about-banner {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .about-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-intro {
+            background-color: #eeeeee;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .about-intro p {
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .author-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .author-image {
+            width: 30%;
+            border: 1px solid #cccccc;
+        }
+
+        .author-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .author-text {
+            width: 70%;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 15px;
+        }
+
+        .author-text h2 {
+            color: #1800AD;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .author-text p {
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #eeeeee;
+            margin-top: 30px;
+            padding: 25px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo img {
+            width: 100px;
+        }
+
+        .footer-column {
+            width: 18%;
+        }
+
+        .footer-column h4 {
+            color: #1800AD;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #555555;
+            line-height: 2em;
+        }
+
+        .rights {
+            border-top: 1px solid #cccccc;
+            margin-top: 30px;
+            padding-top: 15px;
+            color: #777777;
+        }
+
+        @media screen and (max-width: 900px) {
 
             .container {
-                width: 80%;
-                margin: 0 auto;
-            }
-
-            header {
-                background-color: white;
-                padding: 20px;
+                width: 95%;
             }
 
             nav {
-                display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 align-items: center;
             }
 
-            .logo img {
-                width: 100px;
-                display: block;
-            }
-
-            ul {
-                text-align: center;
+            .logo {
+                margin-bottom: 15px;
             }
 
             li {
-                display: inline-block;
-                width: auto;
-                margin: 0 18px;
-                line-height: 3em;
-            }
-
-            a {
-                color: #1800AD;
-                text-decoration: none;
-            }
-
-            .student-hub {
-                background-color: #1800AD;
-                color: white;
-                padding: 10px 15px;
-                white-space: nowrap;
-            }
-
-            .about-banner {
-                width: 100%;
-                margin-bottom: 25px;
-            }
-
-            .about-banner img {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-
-            .about-intro {
-                background-color: #eeeeee;
-                border: 1px solid #cccccc;
-                padding: 15px;
-                margin-bottom: 15px;
-            }
-
-            .about-intro p {
-                color: #555555;
-                line-height: 1.6;
-                margin-bottom: 15px;
-            }
-
-            .about-intro p:last-child {
-                margin-bottom: 0;
+                margin: 0 12px;
             }
 
             .author-section {
-                display: flex;
                 gap: 15px;
-                margin-bottom: 25px;
-                align-items: flex-start;
             }
 
             .author-image {
+                width: 35%;
+            }
+
+            .author-text {
+                width: 65%;
+                padding: 15px;
+            }
+
+            .footer-content {
+                flex-wrap: wrap;
+                gap: 25px;
+            }
+
+            .footer-logo {
+                width: 100%;
+            }
+
+            .footer-column {
                 width: 30%;
-                border: 1px solid #cccccc;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .container {
+                width: 100%;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            ul {
+                width: 100%;
+            }
+
+            li {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+
+            li a {
+                display: block;
+                padding: 5px;
+            }
+
+            .student-hub {
+                margin-top: 5px;
+            }
+
+            .about-banner {
+                margin-bottom: 15px;
+            }
+
+            .about-intro {
+                padding: 15px;
+                margin: 0 15px 15px;
+            }
+
+            .author-section {
+                flex-direction: column;
+                gap: 15px;
+                margin: 0 15px 20px;
+            }
+
+            .author-image {
+                width: 100%;
             }
 
             .author-image img {
@@ -245,193 +401,34 @@
             }
 
             .author-text {
-                width: 70%;
-                background-color: white;
-                border: 1px solid #cccccc;
+                width: 100%;
                 padding: 15px;
             }
 
             .author-text h2 {
-                color: #1800AD;
-                font-size: 30px;
                 margin-bottom: 10px;
-            }
-
-            .author-text p {
-                color: #555555;
-                line-height: 1.6;
             }
 
             footer {
-                background-color: #eeeeee;
-                margin-top: 30px;
-                padding: 25px;
+                margin-top: 20px;
+                padding: 20px;
             }
 
             .footer-content {
-                display: flex;
-                justify-content: space-between;
+                flex-direction: column;
             }
 
-            .footer-logo img {
-                width: 100px;
+            .footer-logo {
+                width: 100%;
+                margin-bottom: 20px;
             }
 
             .footer-column {
-                width: 18%;
+                width: 100%;
+                margin-bottom: 20px;
             }
+        }
 
-            .footer-column h4 {
-                color: #1800AD;
-                margin-bottom: 10px;
-            }
-
-            .footer-column a {
-                display: block;
-                color: #555555;
-                line-height: 2em;
-            }
-
-            .rights {
-                border-top: 1px solid #cccccc;
-                margin-top: 30px;
-                padding-top: 15px;
-                color: #777777;
-            }
-
-            @media screen and (max-width: 900px) {
-
-                .container {
-                    width: 95%;
-                }
-
-                nav {
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .logo {
-                    margin-bottom: 15px;
-                }
-
-                li {
-                    margin: 0 12px;
-                }
-
-                .author-section {
-                    gap: 15px;
-                }
-
-                .author-image {
-                    width: 35%;
-                }
-
-                .author-text {
-                    width: 65%;
-                    padding: 15px;
-                }
-
-                .footer-content {
-                    flex-wrap: wrap;
-                    gap: 25px;
-                }
-
-                .footer-logo {
-                    width: 100%;
-                }
-
-                .footer-column {
-                    width: 30%;
-                }
-            }
-
-            @media screen and (max-width: 600px) {
-
-                .container {
-                    width: 100%;
-                }
-
-                header {
-                    padding: 15px;
-                }
-
-                nav {
-                    flex-direction: column;
-                }
-
-                ul {
-                    width: 100%;
-                }
-
-                li {
-                    display: block;
-                    width: 100%;
-                    margin: 0;
-                }
-
-                li a {
-                    display: block;
-                    padding: 5px;
-                }
-
-                .student-hub {
-                    margin-top: 5px;
-                }
-
-                .about-banner {
-                    margin-bottom: 15px;
-                }
-
-                .about-intro {
-                    padding: 15px;
-                    margin: 0 15px 15px;
-                }
-
-                .author-section {
-                    flex-direction: column;
-                    gap: 15px;
-                    margin: 0 15px 20px;
-                }
-
-                .author-image {
-                    width: 100%;
-                }
-
-                .author-image img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                }
-
-                .author-text {
-                    width: 100%;
-                    padding: 15px;
-                }
-
-                .author-text h2 {
-                    margin-bottom: 10px;
-                }
-
-                footer {
-                    margin-top: 20px;
-                    padding: 20px;
-                }
-
-                .footer-content {
-                    flex-direction: column;
-                }
-
-                .footer-logo {
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
-
-                .footer-column {
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
-            }
-
-        </style>
+    </style>
 
 </html>
