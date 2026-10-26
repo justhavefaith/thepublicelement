@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shape Your World</title>
+    <title>Get Involved | The Public Element</title>
 
     <style>
 
@@ -18,202 +18,267 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: white;
+            color: #222;
         }
 
-        div.container {
+        .container {
             width: 80%;
             margin: 0 auto;
         }
 
+        a {
+            text-decoration: none;
+            color: #1800AD;
+        }
 
-        /* HEADER */
+
+        /* =========================
+           HEADER
+           ========================= */
 
         header {
-            background-color: white;
             padding: 20px;
+            background-color: white;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo img {
             width: 100px;
         }
 
-        ul {
-    text-align: center;
-}
+        nav ul {
+            text-align: center;
+        }
 
-li {
-    display: inline-block;
-    width: auto;
-    margin: 0 18px;
-    line-height: 3em;
-}
+        nav li {
+            display: inline-block;
+            width: auto;
+            margin: 0 18px;
+            line-height: 3em;
+        }
 
-a {
-    color: #1800AD;
-    text-decoration: none;
-}
-
-.student-hub {
-    background-color: #1800AD;
-    color: white;
-    padding: 10px 15px;
-    white-space: nowrap;
-}
+        .student-hub {
+            background-color: #1800AD;
+            color: white;
+            padding: 10px 15px;
+            white-space: nowrap;
+        }
 
 
-        /* HERO */
+        /* =========================
+           HERO
+           ========================= */
 
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px 30px;
+        .get-involved-hero {
+            min-height: 220px;
             border: 1px solid #cccccc;
-        }
-
-        .hero-left {
-            width: 50%;
-            padding-top: 30px;
-        }
-
-        .hero-right {
-            width: 40%;
-        }
-
-        .hero-right img {
-            width: 100%;
-        }
-
-        h1 {
-            color: #1800AD;
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            color: #555555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 30px;
         }
 
-
-        /* BUTTONS */
-
-        .button {
-            display: inline-block;
-            background-color: #cc0000;
-            color: white;
-            padding: 15px 25px;
-            margin-right: 10px;
-        }
-
-        .button-white {
-            display: inline-block;
-            background-color: white;
+        .get-involved-hero h1 {
             color: #1800AD;
-            border: 2px solid #1800AD;
-            padding: 13px 25px;
+            font-size: 3rem;
+            text-align: center;
         }
 
 
-        /* THREE CARDS */
+        /* =========================
+           INVOLVEMENT CARDS
+           ========================= */
 
-        .cards {
-            display: flex;
-            justify-content: space-between;
+        .involvement-section {
             background-color: #eeeeee;
-            padding: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
         }
 
-        .card {
-            width: 31%;
+        .involvement-section h2 {
+            color: #1800AD;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .involvement-intro {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .involvement-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .involvement-card {
             background-color: white;
             border: 1px solid #cccccc;
-            padding: 20px;
-        }
-
-        .icon {
-            margin-bottom: 15px;
-        }
-
-        .icon img {
-            width: 40px;
-        }
-
-        .card h3 {
-            color: #1800AD;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #555555;
-        }
-
-
-        /* TESTIMONIAL */
-
-        .testimonial {
-            padding: 30px;
-            border: 1px solid #cccccc;
-        }
-
-        .testimonial p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .testimonial-name {
-            color: #cc0000;
-        }
-
-
-        /* AS SEEN ON */
-
-        .featured {
-            padding: 30px;
-            border: 1px solid #cccccc;
-        }
-
-        .featured h2 {
-            color: #1800AD;
-        }
-
-
-        /* GET STARTED */
-
-        .action {
+            padding: 15px;
             display: flex;
-            justify-content: space-between;
-            background-color: #1800AD;
-            color: white;
-            padding: 30px;
+            flex-direction: column;
         }
 
-        .action h2 {
+        .card-image {
+            width: 100%;
+            height: 230px;
+            background-color: #f4f4f4;
+            border: 1px solid #cccccc;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .involvement-card h3 {
+            font-size: 1rem;
             margin-bottom: 10px;
         }
 
-        .action-button {
-            background-color: #cc0000;
+        .involvement-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-button {
+            display: block;
+            border: 1px solid #cccccc;
+            color: #222;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+
+        .card-button:hover {
+            background-color: #1800AD;
             color: white;
-            padding: 15px 30px;
         }
 
 
-        /* FOOTER */
+        /* =========================
+           WORK WITH US
+           ========================= */
+
+        .work-with-us {
+            background-color: #222;
+            color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .work-with-us h2 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .work-with-us p {
+            color: #dddddd;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        .work-button {
+            background-color: white;
+            color: #222;
+            padding: 15px 35px;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .work-button:hover {
+            background-color: #1800AD;
+            color: white;
+        }
+
+
+        /* =========================
+           STORY / TESTIMONIAL
+           ========================= */
+
+        .story-section {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+            gap: 40px;
+            align-items: center;
+
+            background-color: #eeeeee;
+            padding: 30px;
+            margin-bottom: 35px;
+        }
+
+        .story-image {
+            height: 200px;
+            background-color: white;
+            border: 1px solid #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-quote {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+
+        .story-name {
+            color: #666;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .story-link {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+
+        /* =========================
+           FOOTER
+           ========================= */
 
         footer {
             background-color: #eeeeee;
-            margin-top: 50px;
             padding: 30px;
+            margin-top: 40px;
         }
 
         .footer-content {
             display: flex;
             justify-content: space-between;
+            gap: 40px;
         }
 
         .footer-logo img {
@@ -221,7 +286,7 @@ a {
         }
 
         .footer-column {
-            width: 18%;
+            width: 20%;
         }
 
         .footer-column h4 {
@@ -231,232 +296,142 @@ a {
 
         .footer-column a {
             display: block;
-            color: #555555;
-            line-height: 2em;
+            color: #555;
+            line-height: 1.8;
         }
 
-        .copyright {
+        .rights {
             border-top: 1px solid #cccccc;
-            margin-top: 40px;
+            margin-top: 30px;
             padding-top: 15px;
-            color: #777777;
+            color: #777;
+            font-size: 0.8rem;
         }
-/* TABLET */
 
-@media screen and (max-width: 900px) {
 
-    div.container {
-        width: 95%;
-    }
+        /* =========================
+           TABLET
+           ========================= */
 
-    /* HEADER */
+        @media screen and (max-width: 900px) {
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+            .container {
+                width: 95%;
+            }
 
-    .logo {
-        margin-bottom: 15px;
-    }
+            nav {
+                flex-direction: column;
+            }
 
-    li {
-        width: auto;
-        margin: 0 12px;
-    }
+            .logo {
+                margin-bottom: 15px;
+            }
 
+            .involvement-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-    /* HERO */
+            .story-section {
+                grid-template-columns: 40% 1fr;
+            }
 
-    .hero {
-        padding: 35px 20px;
-    }
+            .footer-content {
+                flex-wrap: wrap;
+            }
 
-    .hero-left {
-        width: 55%;
-    }
+            .footer-column {
+                width: 30%;
+            }
+        }
 
-    .hero-right {
-        width: 42%;
-    }
 
-    h1 {
-        font-size: 30px;
-    }
+        /* =========================
+           MOBILE
+           ========================= */
 
+        @media screen and (max-width: 600px) {
 
-    /* CARDS */
+            .container {
+                width: 100%;
+            }
 
-    .cards {
-        gap: 15px;
-    }
+            header {
+                padding: 15px;
+            }
 
-    .card {
-        width: 33%;
-    }
+            nav ul {
+                width: 100%;
+            }
 
+            nav li {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
 
-    /* FOOTER */
+            nav li a {
+                display: block;
+                padding: 5px;
+            }
 
-    .footer-content {
-        flex-wrap: wrap;
-        gap: 25px;
-    }
+            .student-hub {
+                margin-top: 5px;
+            }
 
-    .footer-logo {
-        width: 100%;
-    }
+            .get-involved-hero {
+                min-height: 160px;
+                margin: 0 20px 25px;
+            }
 
-    .footer-column {
-        width: 30%;
-    }
-}
+            .get-involved-hero h1 {
+                font-size: 2.2rem;
+            }
 
+            .involvement-section {
+                padding: 20px;
+            }
 
+            .involvement-grid {
+                grid-template-columns: 1fr;
+            }
 
-/* MOBILE */
+            .card-image {
+                height: 200px;
+            }
 
-@media screen and (max-width: 600px) {
+            .work-with-us {
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0 20px 30px;
+            }
 
-    div.container {
-        width: 100%;
-    }
+            .work-button {
+                width: 100%;
+            }
 
+            .story-section {
+                grid-template-columns: 1fr;
+                margin: 0 20px 30px;
+            }
 
-    /* HEADER */
+            .story-image {
+                height: 220px;
+            }
 
-    header {
-        padding: 15px;
-    }
+            footer {
+                padding: 25px 20px;
+            }
 
-    nav {
-        flex-direction: column;
-    }
+            .footer-content {
+                flex-direction: column;
+            }
 
-    ul {
-        width: 100%;
-    }
+            .footer-column {
+                width: 100%;
+            }
+        }
 
-    li {
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
-
-    li a {
-        display: block;
-        padding: 5px;
-    }
-
-    .student-hub {
-        margin-top: 5px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-
-    .hero-left {
-        width: 100%;
-        padding-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .hero-right {
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        line-height: 1.5;
-    }
-
-    .button,
-    .button-white {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-
-    /* CARDS */
-
-    .cards {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .card {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-
-    /* TESTIMONIAL */
-
-    .testimonial {
-        padding: 25px 20px;
-    }
-
-    .testimonial p {
-        font-size: 18px;
-    }
-
-
-    /* FEATURED */
-
-    .featured {
-        padding: 25px 20px;
-    }
-
-
-    /* GET STARTED */
-
-    .action {
-        flex-direction: column;
-        padding: 25px 20px;
-    }
-
-    .action-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        margin-top: 30px;
-        padding: 25px 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-}
     </style>
-
 </head>
 
 
@@ -472,10 +447,10 @@ a {
         <nav>
 
             <div class="logo">
-              <a href="index.html">
-                <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="Logo"
-                >
-              </a>
+                <a href="index.html">
+                    <img src="https://justhavefaith.github.io/thepublicelement/images/the%20public.png"
+                         alt="The Public Element Logo">
+                </a>
             </div>
 
             <ul>
@@ -507,155 +482,171 @@ a {
     </header>
 
 
-
     <main>
 
 
         <!-- HERO -->
 
-        <div class="hero">
+        <section class="get-involved-hero">
 
-            <div class="hero-left">
+            <h1>GET INVOLVED</h1>
 
-                <h1>
-                    SHAPE YOUR WORLD.<br>
-                    TAKE ACTION NOW.
-                </h1>
-
-                <p>
-                    Learn how to turn the issues you care about
-                    into meaningful civic action.
-                </p>
-
-                <a class="button" href="#">
-                    LEARN MORE
-                </a>
-
-                <a class="button-white" href="#">
-                    GET INVOLVED
-                </a>
-
-            </div>
+        </section>
 
 
-            <div class="hero-right">
+        <!-- FOUR PATHS -->
 
-                <div class="slideshow">
-                    <div class="cycle-slideshow">
-                        <img src="https://justhavefaith.github.io/thepublicelement/images/slide1.png">
-                        <img src="https://justhavefaith.github.io/thepublicelement/images/slide2.png">
-                        <img src="https://justhavefaith.github.io/thepublicelement/images/slide3.png">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section class="involvement-section">
 
+            <h2>Find Your Public Element</h2>
 
-        <!-- THREE CARDS -->
-
-        <div class="cards">
-
-
-            <div class="card">
-
-                <div class="icon">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/1.png" alt="Learning">
-                </div>
-
-                <h3>LEARNING RESOURCES</h3>
-
-                <p>
-                    Learn about civic engagement,
-                    government, advocacy, and issues
-                    affecting your community.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icon">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/2.png" alt="Take Action">
-                </div>
-
-                <h3>TAKE ACTION</h3>
-
-                <p>
-                    Find ways to turn your ideas
-                    into action and make your
-                    voice heard.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icon">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/3.png" alt="Community">
-                </div>
-
-                <h3>FIND YOUR COMMUNITY</h3>
-
-                <p>
-                    Connect with organizations,
-                    programs, and people working
-                    toward change.
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- TESTIMONIAL -->
-
-        <div class="testimonial">
-
-            <p>
-                “Young people have the power to shape their
-                communities when they have the tools to make
-                their voices heard@”
+            <p class="involvement-intro">
+                Choose a starting point that feels right for you.
             </p>
 
-            <div class="testimonial-name">
-                Lee, Student, Advocate, ASG President
+
+            <div class="involvement-grid">
+
+
+                <!-- CARD 1 -->
+
+                <article class="involvement-card">
+
+                    <div class="card-image">
+                        ICON
+                    </div>
+
+                    <h3>JOIN A CHAPTER</h3>
+
+                    <p>
+                        Find a local Public Element chapter near you.
+                    </p>
+
+                    <a href="#" class="card-button">
+                        VIEW PATH
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+
+                <article class="involvement-card">
+
+                    <div class="card-image">
+                        ICON
+                    </div>
+
+                    <h3>START A CHAPTER</h3>
+
+                    <p>
+                        Bring The Public Element to your campus and build a community of engaged students.
+                    </p>
+
+                    <a href="#" class="card-button">
+                        VIEW PATH
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+
+                <article class="involvement-card">
+
+                    <div class="card-image">
+                        ICON
+                    </div>
+
+                    <h3>TRAINING</h3>
+
+                    <p>
+                        Build the skills you need to organize, advocate, lead, and participate.
+                    </p>
+
+                    <a href="#" class="card-button">
+                        VIEW PATH
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 4 -->
+
+                <article class="involvement-card">
+
+                    <div class="card-image">
+                        ICON
+                    </div>
+
+                    <h3>EVENTS</h3>
+
+                    <p>
+                        Attend events, workshops, discussions, and civic engagement opportunities.
+                    </p>
+
+                    <a href="#" class="card-button">
+                        VIEW PATH
+                    </a>
+
+                </article>
+
+
             </div>
 
-        </div>
+        </section>
 
 
-        <!-- AS SEEN ON -->
+        <!-- WORK WITH US -->
 
-        <div class="featured">
-
-            <h2>AS SEEN ON...</h2>
-
-        </div>
-
-
-        <!-- GET STARTED -->
-
-        <div class="action">
+        <section class="work-with-us">
 
             <div>
 
-                <h2>READY TO GET STARTED?</h2>
+                <h2>Want to Work With Us?</h2>
 
                 <p>
-                    Find the resources you need to
-                    take the next step.
+                    Become part of The Public Element team. Help us create resources,
+                    support students, grow chapters, and make civic engagement more
+                    accessible on campuses.
                 </p>
 
             </div>
 
-            <a class="action-button" href="#">
-                GET STARTED
+            <a href="#" class="work-button">
+                START HERE
             </a>
 
-        </div>
+        </section>
+
+
+        <!-- STORY -->
+
+        <section class="story-section">
+
+            <div class="story-image">
+                IMAGE
+            </div>
+
+            <div>
+
+                <p class="story-quote">
+                    “Getting involved showed me that civic engagement isn't something
+                    reserved for politicians. Students can have a real voice in the
+                    decisions that affect their campuses and communities.”
+                </p>
+
+                <p class="story-name">
+                    — STUDENT NAME, CAMPUS / COMMUNITY
+                </p>
+
+                <a href="#" class="story-link">
+                    READ THE STORY →
+                </a>
+
+            </div>
+
+        </section>
 
 
     </main>
@@ -667,55 +658,60 @@ a {
 
         <div class="footer-content">
 
-
             <div class="footer-logo">
-                <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="Logo">
-            </div>
 
-
-            <div class="footer-column">
-
-                <h4>COLUMN ONE</h4>
-
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
+                <img src="https://justhavefaith.github.io/thepublicelement/images/the%20public.png"
+                     alt="The Public Element Logo">
 
             </div>
 
 
             <div class="footer-column">
 
-                <h4>COLUMN TWO</h4>
+                <h4>EXPLORE</h4>
 
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
+                <a href="about.html">About</a>
+                <a href="learn.html">Learn</a>
+                <a href="actnow.html">Act Now</a>
+                <a href="getinvolved.html">Get Involved</a>
 
             </div>
 
 
             <div class="footer-column">
 
-                <h4>COLUMN THREE</h4>
+                <h4>CONNECT</h4>
 
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
-                <a href="#">Link label</a>
+                <a href="#">Student Hub</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Contact</a>
+                <a href="#">Instagram</a>
 
             </div>
 
+
+            <div class="footer-column">
+
+                <h4>RESOURCES</h4>
+
+                <a href="#">Civic Guides</a>
+                <a href="#">Community Stories</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Privacy</a>
+
+            </div>
 
         </div>
 
 
         <div class="rights">
-            2026 The Public Element
+            © 2026 The Public Element
         </div>
 
     </footer>
+
+
 </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-            <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
 </body>
 </html>
