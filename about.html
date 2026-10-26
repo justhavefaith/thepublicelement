@@ -31,75 +31,9 @@
             font-weight: 800;
         }
 
-        div.container {
+        .container {
             width: 80%;
             margin: 0 auto;
-        }
-
-        .about-banner {
-            width: 100%;
-            margin-bottom: 25px;
-        }
-
-        .about-banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .about-intro {
-            background-color: #eeeeee;
-            border: 1px solid #cccccc;
-            padding: 22px;
-            margin-bottom: 22px;
-        }
-
-        .about-intro p {
-            color: #555555;
-            line-height: 1.6;
-            margin-bottom: 14px;
-        }
-
-        .about-intro p:last-child {
-            margin-bottom: 0;
-        }
-
-        .author-section {
-            display: flex;
-            gap: 18px;
-            margin-bottom: 25px;
-        }
-
-        .author-image {
-            width: 30%;
-            height: 360px;
-            border: 1px solid #cccccc;
-            overflow: hidden;
-        }
-
-        .author-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .author-text {
-            width: 70%;
-            background-color: white;
-            border: 1px solid #cccccc;
-            padding: 22px;
-        }
-
-        .author-text h2 {
-            color: #1800AD;
-            font-size: 30px;
-            margin-bottom: 14px;
-        }
-
-        .author-text p {
-            color: #555555;
-            line-height: 1.6;
         }
 
         header {
@@ -141,92 +75,68 @@
             white-space: nowrap;
         }
 
-        .button {
-            display: inline-block;
-            background-color: #cc0000;
-            color: white;
-            padding: 12px 22px;
-            margin-right: 10px;
+        .about-banner {
+            width: 100%;
+            margin-bottom: 25px;
         }
 
-        .button-white {
-            display: inline-block;
-            background-color: white;
-            color: #1800AD;
-            border: 2px solid #1800AD;
-            padding: 10px 22px;
+        .about-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        .cards {
-            display: flex;
-            justify-content: space-between;
+        .about-intro {
             background-color: #eeeeee;
-            padding: 15px;
-        }
-
-        .card {
-            width: 31%;
-            background-color: white;
             border: 1px solid #cccccc;
             padding: 15px;
-        }
-
-        .icon {
-            margin-bottom: 10px;
-        }
-
-        .icon img {
-            width: 40px;
-        }
-
-        .card h3 {
-            color: #1800AD;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #555555;
-        }
-
-        .testimonial {
-            padding: 22px;
-            border: 1px solid #cccccc;
-        }
-
-        .testimonial p {
-            font-size: 20px;
             margin-bottom: 15px;
         }
 
-        .testimonial-name {
-            color: #cc0000;
+        .about-intro p {
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
-        .featured {
-            padding: 22px;
+        .about-intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .author-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .author-image {
+            width: 30%;
             border: 1px solid #cccccc;
         }
 
-        .featured h2 {
+        .author-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .author-text {
+            width: 70%;
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 15px;
+        }
+
+        .author-text h2 {
             color: #1800AD;
-        }
-
-        .action {
-            display: flex;
-            justify-content: space-between;
-            background-color: #1800AD;
-            color: white;
-            padding: 22px;
-        }
-
-        .action h2 {
+            font-size: 30px;
             margin-bottom: 10px;
         }
 
-        .action-button {
-            background-color: #cc0000;
-            color: white;
-            padding: 12px 25px;
+        .author-text p {
+            color: #555555;
+            line-height: 1.6;
         }
 
         footer {
@@ -268,7 +178,7 @@
 
         @media screen and (max-width: 900px) {
 
-            div.container {
+            .container {
                 width: 95%;
             }
 
@@ -282,7 +192,6 @@
             }
 
             li {
-                width: auto;
                 margin: 0 12px;
             }
 
@@ -292,20 +201,11 @@
 
             .author-image {
                 width: 35%;
-                height: 340px;
             }
 
             .author-text {
                 width: 65%;
-                padding: 18px;
-            }
-
-            .cards {
-                gap: 15px;
-            }
-
-            .card {
-                width: 33%;
+                padding: 15px;
             }
 
             .footer-content {
@@ -324,7 +224,7 @@
 
         @media screen and (max-width: 600px) {
 
-            div.container {
+            .container {
                 width: 100%;
             }
 
@@ -356,12 +256,12 @@
             }
 
             .about-banner {
-                margin-bottom: 18px;
+                margin-bottom: 15px;
             }
 
             .about-intro {
-                padding: 18px;
-                margin: 0 15px 18px;
+                padding: 15px;
+                margin: 0 15px 15px;
             }
 
             .author-section {
@@ -372,58 +272,21 @@
 
             .author-image {
                 width: 100%;
-                height: 320px;
+            }
+
+            .author-image img {
+                width: 100%;
+                height: auto;
+                display: block;
             }
 
             .author-text {
                 width: 100%;
-                padding: 18px;
+                padding: 15px;
             }
 
             .author-text h2 {
                 margin-bottom: 10px;
-            }
-
-            .button,
-            .button-white {
-                display: block;
-                width: 100%;
-                text-align: center;
-                margin: 10px 0;
-            }
-
-            .cards {
-                flex-direction: column;
-                padding: 15px;
-            }
-
-            .card {
-                width: 100%;
-                margin-bottom: 12px;
-            }
-
-            .testimonial {
-                padding: 20px 15px;
-            }
-
-            .testimonial p {
-                font-size: 18px;
-            }
-
-            .featured {
-                padding: 20px 15px;
-            }
-
-            .action {
-                flex-direction: column;
-                padding: 20px 15px;
-            }
-
-            .action-button {
-                display: block;
-                width: 100%;
-                text-align: center;
-                margin-top: 15px;
             }
 
             footer {
@@ -460,7 +323,8 @@
 
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="Logo">
+                    <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png"
+                         alt="Logo">
                 </a>
             </div>
 
@@ -496,9 +360,8 @@
 
         <section class="about-banner">
 
-            <img
-                src="https://justhavefaith.github.io/thepublicelement/images/about the public element.png"
-                alt="banner reading: about the public element">
+            <img src="https://justhavefaith.github.io/thepublicelement/images/about the public element.png"
+                 alt="banner reading: about the public element">
 
         </section>
 
@@ -522,7 +385,8 @@
 
             <div class="author-image">
 
-                <img src="https://justhavefaith.github.io/thepublicelement/images/author.jpeg">
+                <img src="https://justhavefaith.github.io/thepublicelement/images/author.jpeg"
+                     alt="Author">
 
             </div>
 
@@ -563,9 +427,8 @@
 
             <div class="footer-logo">
 
-                <img
-                    src="https://justhavefaith.github.io/thepublicelement/images/the public.png"
-                    alt="The Public Element Logo">
+                <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png"
+                     alt="The Public Element Logo">
 
             </div>
 
@@ -611,9 +474,6 @@
     </footer>
 
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="https://malsup.github.io/jquery.cycle2.js"></script>
 
 </body>
 
