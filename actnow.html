@@ -105,32 +105,57 @@
             width: 48%;
             min-height: 230px;
             border: 1px solid #cccccc;
-            padding: 25px;
+            padding: 30px;
             background-color: white;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
         }
 
+
+        /* ICON */
+
         .action-icon {
-            width: 50px;
-            height: 50px;
+            width: 90px;
+            height: 90px;
+            flex: 0 0 90px;
+
             background-color: #eeeeee;
             border: 1px solid #cccccc;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 10px;
+
             color: #777777;
-            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .action-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+
+        /* CARD TEXT */
+
+        .action-content {
+            flex: 1;
         }
 
         .action-card h3 {
             color: #1800AD;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin-bottom: 15px;
         }
 
         .action-card p {
             color: #555555;
             line-height: 1.5;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .action-link {
@@ -140,6 +165,11 @@
             padding: 10px 18px;
         }
 
+        .action-link:hover {
+            background-color: #1800AD;
+            color: white;
+        }
+
 
         /* CALL TO ACTION */
 
@@ -147,25 +177,31 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #eeeeee;
-            border: 1px solid #cccccc;
+
+            background-color: #1800AD;
+            color: white;
+
             padding: 35px;
             margin-bottom: 40px;
         }
 
         .act-cta h2 {
-            color: #1800AD;
+            color: white;
             margin-bottom: 10px;
         }
 
         .act-cta p {
-            color: #555555;
+            color: white;
         }
 
         .act-cta-button {
             background-color: #cc0000;
             color: white;
             padding: 15px 30px;
+        }
+
+        .act-cta-button:hover {
+            background-color: #a80000;
         }
 
 
@@ -232,6 +268,7 @@
 
             .action-card {
                 width: 48%;
+                flex-direction: column;
             }
 
             .footer-content {
@@ -308,6 +345,19 @@
 
             .action-card {
                 width: 100%;
+                flex-direction: row;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .action-icon {
+                width: 70px;
+                height: 70px;
+                flex: 0 0 70px;
+            }
+
+            .action-card h3 {
+                font-size: 19px;
             }
 
 
@@ -367,9 +417,11 @@
 
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="The Public Element Logo">
+                    <img src="https://justhavefaith.github.io/thepublicelement/images/the%20public.png"
+                         alt="The Public Element Logo">
                 </a>
             </div>
+
 
             <ul>
 
@@ -400,6 +452,7 @@
     </header>
 
 
+
     <main>
 
 
@@ -416,126 +469,169 @@
         </section>
 
 
+
         <!-- ACTION CARDS -->
 
         <section class="action-grid">
 
 
+            <!-- TOOLKITS -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>TOOLKITS</h3>
+                <div class="action-content">
 
-                <p>
-                    Practical guides and templates to help you take action.
-                </p>
+                    <h3>TOOLKITS</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Practical guides and templates to help you take action.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
+
+            <!-- FIND AN OPPORTUNITY -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>FIND AN OPPORTUNITY</h3>
+                <div class="action-content">
 
-                <p>
-                    Discover events, campaigns, and ways to participate.
-                </p>
+                    <h3>FIND AN OPPORTUNITY</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Discover events, campaigns, and ways to participate.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
+
+            <!-- MAKE YOUR VOICE HEARD -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>MAKE YOUR VOICE HEARD</h3>
+                <div class="action-content">
 
-                <p>
-                    Learn how to contact decision-makers and share your perspective.
-                </p>
+                    <h3>MAKE YOUR VOICE HEARD</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Learn how to contact decision-makers and share your perspective.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
+
+            <!-- CAMPUS RESOURCES -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>CAMPUS RESOURCES</h3>
+                <div class="action-content">
 
-                <p>
-                    Find civic groups, programs, and support on your campus.
-                </p>
+                    <h3>CAMPUS RESOURCES</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Find civic groups, programs, and support on your campus.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
+
+            <!-- GET INVOLVED LOCALLY -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>GET INVOLVED LOCALLY</h3>
+                <div class="action-content">
 
-                <p>
-                    Connect with organizations and issues in your community.
-                </p>
+                    <h3>GET INVOLVED LOCALLY</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Connect with organizations and issues in your community.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
+
+            <!-- FIND REPRESENTATIVES -->
+
             <div class="action-card">
 
                 <div class="action-icon">
                     ICON
                 </div>
 
-                <h3>FIND YOUR REPRESENTATIVES</h3>
+                <div class="action-content">
 
-                <p>
-                    Identify who represents you and how to reach them.
-                </p>
+                    <h3>FIND YOUR REPRESENTATIVES</h3>
 
-                <a class="action-link" href="#">
-                    VIEW / LINK
-                </a>
+                    <p>
+                        Identify who represents you and how to reach them.
+                    </p>
+
+                    <a class="action-link" href="#">
+                        VIEW / LINK
+                    </a>
+
+                </div>
 
             </div>
 
 
         </section>
+
 
 
         <!-- CALL TO ACTION -->
@@ -552,6 +648,7 @@
 
             </div>
 
+
             <a class="act-cta-button" href="#">
                 GET STARTED
             </a>
@@ -560,6 +657,7 @@
 
 
     </main>
+
 
 
     <!-- FOOTER -->
@@ -572,10 +670,12 @@
             <div class="footer-logo">
 
                 <a href="index.html">
-                    <img src="https://justhavefaith.github.io/thepublicelement/images/the public.png" alt="The Public Element Logo">
+                    <img src="https://justhavefaith.github.io/thepublicelement/images/the%20public.png"
+                         alt="The Public Element Logo">
                 </a>
 
             </div>
+
 
 
             <div class="footer-column">
@@ -589,6 +689,7 @@
             </div>
 
 
+
             <div class="footer-column">
 
                 <h4>COLUMN TWO</h4>
@@ -598,6 +699,7 @@
                 <a href="#">Link label</a>
 
             </div>
+
 
 
             <div class="footer-column">
@@ -612,6 +714,7 @@
 
 
         </div>
+
 
 
         <div class="rights">
